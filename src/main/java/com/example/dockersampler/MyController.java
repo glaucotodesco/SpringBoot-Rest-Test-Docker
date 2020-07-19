@@ -8,6 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyController {
 
+
+    @GetMapping("/hello")
+    public String helloEmpty() {
+        return "Hello";
+    }
+
     @GetMapping("/hello/{param}")
     public String hello(@PathVariable String param ) {
         return "Hello: " + param.toUpperCase();
