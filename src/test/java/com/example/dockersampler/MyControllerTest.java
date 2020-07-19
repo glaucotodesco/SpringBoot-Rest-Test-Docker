@@ -20,7 +20,7 @@ public class MyControllerTest {
 
     @Autowired
     private MockMvc mvc;
-
+/*
     @Test
     public void  hello() throws Exception{
         RequestBuilder request = MockMvcRequestBuilders.get("/hello");
@@ -42,6 +42,6 @@ public class MyControllerTest {
         MvcResult result = mvc.perform(request).andReturn();
         assertEquals("Hello: GLAUCO", result.getResponse().getContentAsString());
     }
-
+*/
 }
     
