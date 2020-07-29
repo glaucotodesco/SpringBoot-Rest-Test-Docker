@@ -14,6 +14,11 @@ public class MyController {
         return "Hello";
     }
 
+    @GetMapping("/hello2")
+    public String helloEmpty() {
+        return "Hello2";
+    }
+
     @GetMapping("/hello/{param}")
     public String hello(@PathVariable String param ) {
         return "Hello: " + param.toUpperCase();
