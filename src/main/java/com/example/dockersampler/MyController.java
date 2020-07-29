@@ -11,13 +11,10 @@ public class MyController {
 
     @GetMapping("/hello")
     public String helloEmpty() {
-        return "Hello";
+        return "Hello 2";
     }
 
-    @GetMapping("/hello2")
-    public String helloEmpty2() {
-        return "Hello2";
-    }
+   
 
     @GetMapping("/hello/{param}")
     public String hello(@PathVariable String param ) {
